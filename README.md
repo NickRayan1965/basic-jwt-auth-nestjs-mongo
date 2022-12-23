@@ -15,11 +15,13 @@ npm i -g @nest/cli
 4. Tener creada y levantada la Base de datos Mongo
 5. Clonar el archivo __.env.template.__ y renombrar la copia a __.env__
 6. Llenar las variables de entorno definidas en __.env__ (si no cuenta con usuario y contraseña en la DB no la ponga)
-7. Ejecutar la aplicación en dev:
+7. Cambiar nombre del proyecto. En el archivo "package.json", en la propiedad "name", poner el nuevo nombre y tambien renombrar la carpeta del proyecto
+ 
+8. Ejecutar la aplicación en dev:
 ```
 npm run start:dev
 ```
-8. Revisar la documentación en: 
+9. Revisar la documentación en: 
 ```
 localhost:3000/api
 ```
