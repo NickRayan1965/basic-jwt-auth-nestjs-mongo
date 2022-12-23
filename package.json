@@ -1,5 +1,5 @@
 {
-  "name": "basic-jwt-auth-with-roles",
+  "name": "basic-jwt-auth-nestjs-mongo",
   "version": "0.0.1",
   "description": "",
   "author": "",
