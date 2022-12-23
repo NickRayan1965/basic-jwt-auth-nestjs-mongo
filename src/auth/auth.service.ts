@@ -5,8 +5,8 @@ import * as bcrypt from 'bcrypt';
 import { CreateOrLoginResponseDto } from './dto/create-or-login-response.dto';
 import { JwtPayload } from './interfaces';
 import { JwtService } from '@nestjs/jwt';
-import { handleExceptions } from '../../src/common/errors/handleExceptions';
 import { User } from './entities/user.entity';
+import { handleExceptions } from '../common/errors/handleExceptions';
 @Injectable()
 export class AuthService {
     constructor(
