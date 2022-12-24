@@ -1,7 +1,7 @@
 import {
     IsArray,
     IsEmail,
-    IsIn,
+    IsEnum,
     IsOptional,
     IsString,
     MinLength,
@@ -35,6 +35,6 @@ export class CreateUserDto {
     })
     @IsOptional()
     @IsArray()
-    @IsIn([ValidRoles.admin, ValidRoles.employed], { each: true })
+    @IsEnum(ValidRoles, { each: true })
     readonly roles?: ValidRoles[];
 }
