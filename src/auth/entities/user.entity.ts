@@ -29,7 +29,7 @@ export class User {
     @ApiProperty({
         description: 'Contraseña para el usuario',
         minLength: 6,
-        nullable: true,
+        nullable: false,
     })
     @Prop({ required: true, minlength: 6 })
     password: string;
