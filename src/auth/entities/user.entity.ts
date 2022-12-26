@@ -1,5 +1,5 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import { Document, Types } from 'mongoose';
+import { Document } from 'mongoose';
 import { ValidRoles } from '../interfaces';
 import { ApiProperty } from '@nestjs/swagger';
 export const DEFAULT_USER_ROLES = [ValidRoles.employed];
@@ -12,7 +12,7 @@ export class User {
         example: '6392342f99fa9d34bdc8b2c4',
         nullable: false,
     })
-    _id?: Types.ObjectId;
+    _id: any;
     @ApiProperty({
         description: "Email para el usuario, solo email's válidos",
         uniqueItems: true,
